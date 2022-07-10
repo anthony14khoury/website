@@ -1,0 +1,28 @@
+.home-title, .home-details{
+    margin: auto;
+    text-align: center;
+}
+
+.home-title {
+    margin-top: 25vh;
+    width: 50%;
+    font-size: calc(100% + 2vw);
+    font-weight: 600;
+}
+
+.home-details {
+    margin-top: 5vh;
+    font-size: calc(100% + 0.25vw);
+}
+  
+.home-contact {
+    /* width: 45%; */
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.home-links p {
+    text-align: left;
+    display: inline;
+}
