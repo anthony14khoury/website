@@ -16,13 +16,17 @@
 }
   
 .home-contact {
-    /* width: 45%; */
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     text-align: center;
 }
 
-.home-links p {
-    text-align: left;
-    display: inline;
+.home-contact p {
+    font-size: calc(100% + 0.6vw);
+}
+
+.home-icon {
+    font-size: calc(100% + 1.5vw);
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
 }

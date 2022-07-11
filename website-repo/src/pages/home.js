@@ -1,4 +1,5 @@
 import './home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Home() {
   return (		
@@ -13,10 +14,10 @@ function Home() {
         <div className='home-contact'>
             <p>Let's get connected</p>
             <div className='home-links'>
-                <p>Email</p>
-                <p>LinkedIN</p>
-                <p>Github</p>
-                <p>IG</p>
+                <FontAwesomeIcon className='home-icon' icon="fa-solid fa-envelope" />
+                <FontAwesomeIcon className='home-icon' icon="fab fa-linkedin" />
+                <FontAwesomeIcon className='home-icon' icon="fa-brands fa-github" />
+                <FontAwesomeIcon className='home-icon' icon="fa-brands fa-instagram" />
             </div>
         </div>
     </div>
