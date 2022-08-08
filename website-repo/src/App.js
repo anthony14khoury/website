@@ -16,16 +16,14 @@ library.add(fab, faEnvelope)
 
 function App() {
   return (
-    <>
+    <div className="container">
         <Navigation />
-        <div className="container">
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/experience" element={<Experience />} />
-                <Route path="/about" element={<About />} />
-            </Routes>
-        </div>
-    </>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/about" element={<About />} />
+        </Routes>
+    </div>
   );
 }
 

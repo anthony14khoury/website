@@ -2,7 +2,7 @@ import './home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
-    return (		
+    return (
         <div className='home-container'>
 
             <div className='home-title'> <p>Hi, my name is Anthony Khoury</p> </div>
