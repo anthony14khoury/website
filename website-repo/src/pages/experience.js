@@ -1,6 +1,6 @@
 import './experience.css';
 
-function Experience() {
+export default function Experience() {
   return (		
     <div className='experience-container'>
 
@@ -9,4 +9,3 @@ function Experience() {
     </div>
   );
 }
-export default Experience;

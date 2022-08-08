@@ -1,24 +1,25 @@
 import './navigation.css';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
 
-import Experience from '../pages/experience';
-import App from '../App';
+import * as React from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
-function Navigation() {
+export default function Navigation() {
     return (
-        <Navbar>
-            <Container>
-                    <Navbar.Brand to={App}>Brand</Navbar.Brand>
-                    <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link to={Experience}>Experience</Nav.Link>
-                            {/* <Nav.Link href="#pricing">Resume</Nav.Link> */}
-                    </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    );
+        <nav className="nav">
+            <Link to="/" className="site-title">Home</Link>
+            <CustomLink to="/experience">Experience</CustomLink>
+            <CustomLink to="/about">About</CustomLink>
+        </nav>
+    )
 }
 
-export default Navigation;
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}> {children} </Link>
+        </li>
+    )
+  }
