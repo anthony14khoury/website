@@ -1,6 +1,11 @@
 import './App.css';
 import Navigation from './components/navigation'
+import Experience from './pages/experience';
+import About from './pages/about';
 import Home from './pages/home'
+
+import * as React from "react"
+import { Route, Routes } from "react-router-dom"
 
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -11,12 +16,16 @@ library.add(fab, faEnvelope)
 
 function App() {
   return (
-    <div className="App">
-		
+    <>
         <Navigation />
-        <Home />
-
-    </div>
+        <div className="container">
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </div>
+    </>
   );
 }
 
