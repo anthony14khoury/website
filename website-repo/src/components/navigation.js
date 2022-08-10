@@ -1,7 +1,6 @@
 import './navigation.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
 import Resume from '../assets/Anthony Khoury Resume.pdf';
 
 import * as React from "react";
@@ -9,8 +8,8 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navigation() {
     return (
-        <Navbar bg="light" variant="light">
-            <Container>
+        <div className='navigation'>
+            <Navbar>
                 <Nav className="mx-auto">
                     <Nav.Link className='nav-center'>
                         <Link to="/" className="nav-name">Home</Link>
@@ -28,8 +27,8 @@ export default function Navigation() {
                         <a className='nav-center' href={Resume} target="_blank" rel="noreferrer" class="nav-name">Resume</a>
                     </Nav.Link>
                 </Nav>
-            </Container>
-        </Navbar>
+            </Navbar>
+        </div>
     )
 }
 

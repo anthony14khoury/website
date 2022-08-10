@@ -15,15 +15,15 @@ library.add(fab, faEnvelope)
 
 
 function App() {
-  return (
-    <div className="container">
-        <Navigation />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/about" element={<About />} />
-        </Routes>
-    </div>
+    return (
+        <div className="app-container">
+            <Navigation />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </div>
   );
 }
 
