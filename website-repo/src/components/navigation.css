@@ -1,8 +1,12 @@
+.navigation {
+     background-color: rgb(16, 16, 34);     
+}
+
 .nav-center {
      margin: 0 3vw;
 }
 
 .nav-name {
-     color: black;
+     color: white;
      text-decoration: none;
 }

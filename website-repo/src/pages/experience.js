@@ -1,33 +1,48 @@
 import './experience.css';
 import {Button, Image, Card, Container, Row, Col} from 'react-bootstrap'
-import VMware from '../assets/vmware.png'
-import GEA_Pic from '../assets/GEA.jpg'
 import Python from '../assets/python.png'
 import Tableau from '../assets/tableau.svg'
 import MySQL from '../assets/mysql.png'
-// import Background from '../assets/background.png'
+import VMware from '../assets/vmware.jpg'
+import GEA_img from '../assets/GEA.jpg'
+import UF_img from '../assets/UF.png'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Experience() {
   return (
-    <Container className='experience-container'>
-        <Row>
-            <Col><Buttons /></Col>
-        </Row>
-        
-        <div className='mid-space'></div>
-        
-        <Row>
-            <Col><VMware1/></Col>
-            <Col><VMware2/></Col>
-        </Row>
+    <div className='experience'>
+        <Container className='experience-container'>
+            <Row>
+                <Col><Buttons /></Col>
+            </Row>
+            
+            <div className='mid-space'></div>
 
-        <Row>
-            <Col><GEA /></Col>
-        </Row>
+            <Row className='experience1-container'>
+                <Col><VMware1/></Col>
+                <Col>
+                    <Row style={{"height":"50%"}}></Row>
+                    <Row><GEA/></Row>
+                </Col>
+            </Row>
 
-        <div className='extra-space'></div>
-    </Container>
+            <Row className='experience2-container' style={{"marginTop":"50px"}}>
+                <Col><VMware2/></Col>
+                <Col>
+                    <Row style={{"height":"50%"}}></Row>
+                    <Row><UF_TA/></Row>
+                </Col>
+            </Row>
 
+
+            <Row style={{"marginTop":"50px"}}>
+                <Col><InternHackathon/></Col>
+                <Col></Col>
+            </Row>
+
+            <div className='extra-space'></div>
+        </Container>
+    </div>
   );
 }
 
@@ -51,35 +66,50 @@ function Buttons() {
 
 function VMware1() {
     return (
-        <Container className='vmware1-card'>
-            <Card style={{ width: '35vw' }}>
-            <Card.Img variant="top" src={VMware} style={{ width: '25vw' }}/>
-            <Card.Body>
+        <Card>
+            <Card.Body className='vmware1-body'>
+                <div className='img-container'>
+                    <Card.Img 
+                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    src={VMware}></Card.Img>
+                </div>
+                
                 <Card.Title>Software Engineering & Data Analysis Intern</Card.Title>
                 <Card.Text>May 2022 - August 2022</Card.Text>
                 <Card.Text>
-                <ul>
-                    <li>Automated 4 Tableau dashboards by connecting a virtual machine, SQL server, MySQL database, and 15 complex queries to visualize data on our virtual cloud’s life cycle in real-time</li>
-                    <li>Optimized python script by 67% using multiprocessing and threads to report logs and errors on failed virtual machines</li>
-                </ul>
+                    <ul>
+                        <li>Automated 4 Tableau dashboards by connecting a virtual machine, SQL server, MySQL database, and 15 complex queries to visualize data on our virtual cloud’s life cycle in real-time</li>
+                        <li>Optimized python script by 67% using multiprocessing and threads to report logs and errors on failed virtual machines</li>
+                    </ul>
                 </Card.Text>
+                <Card.Text>Topics:</Card.Text>
+                <Card.Text>
+                    <ul>
+                        <li>Algorithms Development</li>
+                        <li>Database Management</li>
+                    </ul>
+                </Card.Text>
+
+                <Card.Text>Tools Used</Card.Text>
                 <Row md={6}>
                     <Col><Image src={Python} style={{width:'2.5vw'}}/></Col>
                     <Col><Image src={Tableau} style={{width:'2.5vw'}}/></Col>
                     <Col><Image src={MySQL} style={{width:'3.5vw'}}/></Col>
                 </Row>
             </Card.Body>
-            </Card>
-        </Container>
+        </Card>
     )
 }
 
 function VMware2() {
     return (
-        <Container className='vmware2-card'>
-            <Card style={{ width: '35vw' }}>
-            <Card.Img variant="top" src={VMware} style={{ width: '25vw' }}/>
+        <Card>
             <Card.Body>
+                <div className='img-container'>
+                    <Card.Img 
+                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    src={VMware}></Card.Img>
+                </div>
                 <Card.Title>Cloud Development & Project Management Intern</Card.Title>
                 <Card.Text>May 2021 - August 2021</Card.Text>
                 <Card.Text>
@@ -99,17 +129,19 @@ function VMware2() {
                 </ul>
                 </Card.Text>
             </Card.Body>
-            </Card>
-        </Container>
+        </Card>
     )
 }
 
 function GEA() {
     return (
-        <Container className='gea-card'>
-            <Card style={{ width: '35vw' }}>
-            <Card.Img variant="top" src={GEA_Pic} style={{ width: '25vw' }}/>
+        <Card>
             <Card.Body>
+                <div className='img-container'>
+                    <Card.Img 
+                    style={{"width":"17vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    src={GEA_img}></Card.Img>
+                </div>
                 <Card.Title>Software Development Intern</Card.Title>
                 <Card.Text>January 2021 - April 2021</Card.Text>
                 <Card.Text>
@@ -123,8 +155,54 @@ function GEA() {
                 </ul>
                 </Card.Text>
             </Card.Body>
-            </Card>
-        </Container>
+        </Card>
     )
 }
 
+function UF_TA() {
+    return (
+        <Card>
+            <Card.Body>
+            <div className='img-container'>
+                    <Card.Img 
+                    style={{"width":"17vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    src={UF_img}></Card.Img>
+                </div>
+                <Card.Title>Teaching Assistant for Software Engineering</Card.Title>
+                <Card.Text>January 2022 - Present</Card.Text>
+                <Card.Text>
+                <ul>
+                    <li>
+                        Instructed 24 advanced students weekly to increase their foundational skills in Python, React, Mongo DB, and Java 
+                    </li>
+                    <li>
+                        Collaborated with a Professor and 4 TAs to create lesson plans, projects, and exams covering topics including source control, testing, security, agile development, scrum, and ethics
+                    </li>
+                </ul>
+                </Card.Text>
+            </Card.Body>
+        </Card>
+    )
+}
+
+function InternHackathon() {
+    return (
+        <Card>
+            <Card.Body>
+                <Card.Title>2-Time Intern Hackathon Winner</Card.Title>
+                <Card.Title>VMware</Card.Title>
+                <Card.Text>August 2021 & August 20222</Card.Text>
+                <Card.Text>
+                <ul>
+                    <li>
+                        Developed a Microsoft Outlook plugin using C# to improve workplace relationships in a hybrid environment by synchronizing when team members will be in the office
+                    </li>
+                    <li>
+                        Directed 3 interns through the ideation, development, and presentation of a Figma prototype aimed at centralizing the company’s onboarding and offboarding process
+                    </li>
+                </ul>
+                </Card.Text>
+            </Card.Body>
+        </Card>
+    )
+}
