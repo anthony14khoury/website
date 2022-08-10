@@ -34,10 +34,18 @@
 .mid-space {
     margin-top: 10vh
 }
-
-img-container {
-    margin: auto;
-}
 .extra-space {
     height: 100vh;
 }
+
+.vmware1-body {
+    background-image: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    color: white;
+}
+
+.vmware2-body {
+    background-image: linear-gradient(to right, #659999, #f4791f);
+    color: white;
+}
+
+/* .gea-body { */

@@ -3,8 +3,8 @@ import {Button, Image, Card, Container, Row, Col} from 'react-bootstrap'
 import Python from '../assets/python.png'
 import Tableau from '../assets/tableau.svg'
 import MySQL from '../assets/mysql.png'
-import VMware from '../assets/vmware.jpg'
-import GEA_img from '../assets/GEA.jpg'
+import VMware from '../assets/vmware.png'
+import GEA_img from '../assets/GEA.png'
 import UF_img from '../assets/UF.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -66,11 +66,11 @@ function Buttons() {
 
 function VMware1() {
     return (
-        <Card>
-            <Card.Body className='vmware1-body'>
-                <div className='img-container'>
+        <Card style={{"border":"none", "borderRadius":"50px"}}>
+            <Card.Body className='vmware1-body' style={{"borderRadius":"50px"}}>
+                <div>
                     <Card.Img 
-                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto", "marginBottom":"-25px", "marginTop":"-25px"}} 
                     src={VMware}></Card.Img>
                 </div>
                 
@@ -103,11 +103,11 @@ function VMware1() {
 
 function VMware2() {
     return (
-        <Card>
-            <Card.Body>
-                <div className='img-container'>
+        <Card style={{"border":"none", "borderRadius":"50px"}}>
+            <Card.Body className='vmware2-body' style={{"borderRadius":"50px"}}>
+                <div>
                     <Card.Img 
-                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto", "marginBottom":"-25px", "marginTop":"-25px"}} 
                     src={VMware}></Card.Img>
                 </div>
                 <Card.Title>Cloud Development & Project Management Intern</Card.Title>
@@ -135,11 +135,11 @@ function VMware2() {
 
 function GEA() {
     return (
-        <Card>
-            <Card.Body>
-                <div className='img-container'>
+        <Card style={{"border":"none", "borderRadius":"50px"}}>
+            <Card.Body className='gea-body' style={{"borderRadius":"50px"}}>
+                <div>
                     <Card.Img 
-                    style={{"width":"17vw", "display":"block", "marginLeft":"auto", "marginRight":"auto"}} 
+                    style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto", "marginBottom":"35px", "marginTop":"25px"}} 
                     src={GEA_img}></Card.Img>
                 </div>
                 <Card.Title>Software Development Intern</Card.Title>
