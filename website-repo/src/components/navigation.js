@@ -16,11 +16,11 @@ export default function Navigation() {
                     </Nav.Link>
 
                     <Nav.Link className='nav-center'>
-                        <CustomLink to="/about" className="nav-name">About</CustomLink>
+                        <CustomLink to="/experience" className="nav-name">Professional Experience</CustomLink>
                     </Nav.Link>
 
                     <Nav.Link className='nav-center'>
-                        <CustomLink to="/experience" className="nav-name">Experience</CustomLink>
+                        <CustomLink to="/projects" className="nav-name">Projects</CustomLink>
                     </Nav.Link>
                     
                     <Nav.Link className='nav-center'>

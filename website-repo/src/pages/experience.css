@@ -32,20 +32,58 @@
 }
 
 .mid-space {
-    margin-top: 10vh
+    padding-top: 10vh
 }
 .extra-space {
     height: 100vh;
 }
 
+.vmware1-border{
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    padding: 8px;
+}
 .vmware1-body {
-    background-image: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    background-color: rgb(16, 16, 34);
     color: white;
 }
 
+.vmware2-border {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    padding: 8px;
+}
 .vmware2-body {
-    background-image: linear-gradient(to right, #659999, #f4791f);
+    background-color: rgb(16, 16, 34);
     color: white;
 }
 
-/* .gea-body { */
+.gea-border {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
+    padding: 8px;
+}
+.gea-body {
+    background-color: rgb(16, 16, 34);
+    color: white;
+}
+
+.uf-ta-border {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #c9ffbf, #ffafbd);
+    padding: 8px;
+}
+.uf-ta-body {
+    background-color: rgb(16, 16, 34);
+    color: white;
+}
+
+.intern-hack-border {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #24c6dc, #514a9d);
+    padding: 8px;
+}
+.intern-hack-body {
+    background-color: rgb(16, 16, 34);
+    color: white;
+}
