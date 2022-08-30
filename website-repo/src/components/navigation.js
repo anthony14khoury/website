@@ -12,19 +12,19 @@ export default function Navigation() {
             <Navbar>
                 <Nav className="mx-auto">
                     <Nav.Link className='nav-center'>
-                        <Link to="/" className="nav-name">Home</Link>
+                        <Link to="/" className="nav-name home_nav">Home</Link>
                     </Nav.Link>
 
                     <Nav.Link className='nav-center'>
-                        <CustomLink to="/experience" className="nav-name">Professional Experience</CustomLink>
+                        <CustomLink to="/experience" className="nav-name professional_experience_nav">Professional Experience</CustomLink>
                     </Nav.Link>
 
                     <Nav.Link className='nav-center'>
-                        <CustomLink to="/projects" className="nav-name">Projects</CustomLink>
+                        <CustomLink to="/projects" className="nav-name projects_nav">Projects</CustomLink>
                     </Nav.Link>
                     
                     <Nav.Link className='nav-center'>
-                        <a className='nav-center' href={Resume} target="_blank" rel="noreferrer" class="nav-name">Resume</a>
+                        <a className='nav-center' href={Resume} target="_blank" rel="noreferrer" class="nav-name resume_nav">Resume</a>
                     </Nav.Link>
                 </Nav>
             </Navbar>

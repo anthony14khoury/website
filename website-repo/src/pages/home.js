@@ -14,10 +14,9 @@ export default function Home() {
             <div className='home-contact'>
                 <p>Let's get connected</p>
                 <div className='home-links'>
-                    <FontAwesomeIcon className='home-icon' icon="fa-solid fa-envelope"/>
-                    <FontAwesomeIcon className='home-icon' icon="fab fa-linkedin" />
-                    <FontAwesomeIcon className='home-icon' icon="fa-brands fa-github" />
-                    <FontAwesomeIcon className='home-icon' icon="fa-brands fa-instagram" />
+                    <FontAwesomeIcon className='home-icon mail' icon="fa-solid fa-envelope"/>
+                    <FontAwesomeIcon className='home-icon linkedin' icon="fab fa-linkedin" />
+                    <FontAwesomeIcon className='home-icon github' icon="fa-brands fa-github" />
                 </div>
             </div>
         </div>
