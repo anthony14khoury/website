@@ -10,3 +10,19 @@
      color: white;
      text-decoration: none;
 }
+
+.home_nav:hover {
+     color: #CCFF66;
+}
+
+.professional_experience_nav:hover {
+     color: #00FFFF;
+}
+
+.projects_nav:hover {
+     color: #FF0400;
+}
+
+.resume_nav:hover {
+     color: #FFC700;
+}

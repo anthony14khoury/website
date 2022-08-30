@@ -4,6 +4,7 @@ import Python from '../assets/python.png'
 import Tableau from '../assets/tableau.svg'
 import MySQL from '../assets/mysql.png'
 import VMware from '../assets/vmware.png'
+import VMware1_Presentation from '../assets/Final Presentation.png'
 import GEA_img from '../assets/GEA.png'
 import UF_img from '../assets/UF.png'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,25 +12,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Experience() {
   return (
     <div className='experience'>
-        <Container className='experience-container'>
-            {/* <Row>
-                <Col><Buttons /></Col>
-            </Row> */}
-            
+
+        <div className='experience-container'>
+
             <div className='mid-space'></div>
+
+            <p className='exp_title'>Professional Experience</p>
+
 
             <Row className='experience1-container'>
                 <Col><VMware1/></Col>
                 <Col>
-                    <Row style={{"height":"50%"}}></Row>
-                    <Row><GEA/></Row>
+                    <Row style={{"height":"20%"}}></Row>
+                    <Row><VMware2/></Row>
                 </Col>
             </Row>
 
             <Row className='experience2-container' style={{"marginTop":"50px"}}>
-                <Col><VMware2/></Col>
+                <Col><GEA/></Col>
                 <Col>
-                    <Row style={{"height":"50%"}}></Row>
+                    <Row style={{"height":"30%"}}></Row>
                     <Row><UF_TA/></Row>
                 </Col>
             </Row>
@@ -41,7 +43,7 @@ export default function Experience() {
             </Row>
 
             <div className='extra-space'></div>
-        </Container>
+        </div>
     </div>
   );
 }
@@ -74,7 +76,6 @@ function VMware1() {
                         style={{"width":"12vw", "display":"block", "marginLeft":"auto", "marginRight":"auto", "marginBottom":"-25px", "marginTop":"-25px"}} 
                         src={VMware}></Card.Img>
                     </div>
-                    
                     <Card.Title>Software Engineering & Data Analysis Intern</Card.Title>
                     <Card.Text>May 2022 - August 2022</Card.Text>
                     <Card.Text>
@@ -87,11 +88,11 @@ function VMware1() {
                     <Card.Text>
                         <ul>
                             <li>Algorithms Development</li>
-                            <li>Database Management</li>
+                            <li>Database Development</li>
                         </ul>
                     </Card.Text>
 
-                    <Card.Text>Tools Used</Card.Text>
+                    <Card.Text>Tools:</Card.Text>
                     <Row sm={6}>
                         <Col><Image src={Python} style={{width:'2.5vw'}}/></Col>
                         <Col><Image src={Tableau} style={{width:'2.5vw'}}/></Col>
